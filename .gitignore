@@ -1,1 +1,4 @@
+#plik systemowy
+.DS_Store
+#venv
 .venv
