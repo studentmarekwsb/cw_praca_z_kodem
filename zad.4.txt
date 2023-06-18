@@ -1,0 +1,28 @@
+Docker to otwarte narzędzie służące do wirtualizacji na poziomie systemu operacyjnego. Pozwala na pakowanie aplikacji i wszystkich jej zależności w jednostkę zwana kontenerem. Kontenery Docker są izolowane od siebie i od hosta, co umożliwia konsystentne i niezawodne uruchamianie aplikacji w różnych środowiskach.
+
+Docker wykorzystuje technologię konteneryzacji, która pozwala na przenoszenie aplikacji wraz z ich zależnościami i konfiguracją systemową. Kontenery Docker są lekkie, niezależne od platformy i łatwe do uruchamiania na różnych środowiskach, od lokalnego komputera po chmurę.
+
+Składnia i pliki konfiguracyjne używane do tworzenia obrazów Dockerowych to:
+
+Dockerfile: Jest to plik tekstowy bez rozszerzenia, w którym definiuje się instrukcje potrzebne do zbudowania obrazu Dockerowego. Plik Dockerfile zawiera szereg poleceń, takich jak FROM (określa bazowy obraz), COPY (kopiowanie plików do obrazu), RUN (uruchamianie komend wewnątrz kontenera), CMD (domyślna komenda wykonywana przy uruchamianiu kontenera) itp. Plik Dockerfile jest podstawowym elementem konfiguracji obrazu Dockerowego.
+
+docker-compose.yml: Jest to plik YAML, w którym definiuje się wielokontenerowe aplikacje składające się z kilku usług. Plik docker-compose.yml zawiera informacje o usługach, takie jak obrazy, porty, zmienne środowiskowe, sieci, wolumeny itp. Umożliwia łatwe zarządzanie wieloma kontenerami i ich konfigurację.
+
+Składnia w pliku Dockerfile jest prostym zestawem instrukcji w stylu "klucz: wartość". Przykładowy plik Dockerfile może wyglądać tak:
+
+sql
+Copy code
+FROM python:3.8-slim-buster
+WORKDIR /app
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+COPY . .
+CMD ["python", "app.py"]
+W powyższym przykładzie:
+
+Instrukcja FROM określa bazowy obraz, w tym przypadku obraz Pythona w wersji 3.8 na systemie Debian Slim.
+Instrukcja WORKDIR ustawia bieżący katalog wewnątrz kontenera.
+Instrukcja COPY kopiuje pliki do kontenera, w tym przypadku plik requirements.txt i całą zawartość bieżącego katalogu.
+Instrukcja RUN wykonuje komendę wewnątrz kontenera, w tym przypadku instaluje zależności z pliku requirements.txt.
+Instrukcja CMD określa domyślną komendę, która zostanie uruchomiona przy uruchomieniu kontenera.
+Pliki konfiguracyjne Docker pozwalają na definiowanie, budowanie i uruchamianie kontenerów w sposób zautomatyzowany i powtarzalny, co ułatwia wdrażanie aplikacji w różnych środowiskach.
