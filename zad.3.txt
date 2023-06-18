@@ -1,13 +1,18 @@
-CI/CD to skrót od Continuous Integration/Continuous Deployment (ciągła integracja/ciągłe wdrażanie). Jest to podejście do wytwarzania oprogramowania, które obejmuje automatyzację procesów związanych z integracją, testowaniem i wdrażaniem kodu. CI/CD ma na celu przyspieszenie cyklu wytwarzania oprogramowania, zwiększenie jego jakości oraz skuteczności i wydajności procesu dostarczania oprogramowania.
+CI/CD jest skrótem od Continuous Integration/Continuous Deployment - to strategia, która obejmuje procesy wytwarzania oprogramowania, 
+w których stosuje się ciągłą integrację i ciągłe wdrażani do automatyzację procesów związanych z integracją, testowaniem i wdrażaniem kodu. 
+Ma za zadanie przyspieszyć cykl wytwarzania oprogramowania, zwiększenie jego jakości oraz skuteczności i wydajności procesu dostarczania oprogramowania.
 
-Continuous Integration (ciągła integracja) polega na regularnym łączeniu i testowaniu zmian wprowadzanych przez programistów. Głównym celem CI jest zapewnienie, że nowe zmiany w kodzie są zintegrowane ze źródłami i innymi zmianami, a także że te zmiany przechodzą testy automatyczne. Proces ten pozwala na szybkie wykrycie i rozwiązanie konfliktów, błędów czy problemów z kompatybilnością.
+CI (ciągła integracja) polega na regularnym łączeniu i testowaniu zmian wprowadzanych przez programistów.
+A głównym jego celem jest zapewnienie, że nowe zmiany w kodzie są zintegrowane ze źródłami i innymi zmianami, a także że te zmiany przechodzą testy automatyczne. 
+Proces ten pozwala na szybkie wykrycie i rozwiązanie konfliktów, błędów czy problemów z kompatybilnością.
 
-Continuous Deployment (ciągłe wdrażanie) koncentruje się na automatycznym wdrażaniu gotowego do użycia oprogramowania do środowisk produkcyjnych. Po zakończeniu procesu CI, oprogramowanie jest automatycznie wdrażane w środowisku docelowym bez potrzeby manualnego interweniowania. To pozwala na szybkie dostarczanie zmian i nowych funkcjonalności użytkownikom końcowym.
+CD (ciągłe wdrażanie) koncentruje się na automatycznym wdrażaniu gotowego do użycia oprogramowania do środowisk produkcyjnych. 
+Po zakończeniu procesu CI, oprogramowanie jest automatycznie wdrażane w środowisku docelowym bez potrzeby manualnego interweniowania. 
+To pozwala na szybkie dostarczanie zmian i nowych funkcjonalności użytkownikom końcowym.
 
-Wprowadzenie CI/CD ma wiele korzyści, takich jak:
-
-Szybsze dostarczanie oprogramowania: Automatyzacja procesów pozwala na szybkie wdrażanie zmian i dostarczanie nowych funkcji.
-Wyższa jakość oprogramowania: Regularne testowanie i automatyczne sprawdzanie kodu pomaga wykrywać błędy wcześnie i zwiększać jakość kodu.
-Zwiększenie efektywności: Automatyzacja procesów eliminuje wiele ręcznych i powtarzających się zadań, co zwiększa efektywność zespołu.
-Łatwiejsze zarządzanie zmianami: CI/CD ułatwia śledzenie zmian i zarządzanie wersjami kodu, co ułatwia zarządzanie rozbudowanymi projektami.
-CI/CD jest ważnym elementem w dzisiejszym środowisku wytwarzania oprogramowania, umożliwiającym skuteczne dostarczanie wartościowych produktów i usług szybko i niezawodnie.
+Korzyści:
+- Szybsze dostarczanie oprogramowania: Automatyzacja procesów pozwala na szybkie wdrażanie zmian i dostarczanie nowych funkcji.
+- Wyższa jakość oprogramowania: Regularne testowanie i automatyczne sprawdzanie kodu pomaga wykrywać błędy wcześnie i zwiększać jakość kodu.
+- Zwiększenie efektywności: Automatyzacja procesów eliminuje wiele ręcznych i powtarzających się zadań, co zwiększa efektywność zespołu.
+- Łatwiejsze zarządzanie zmianami: CI/CD ułatwia śledzenie zmian i zarządzanie wersjami kodu, co ułatwia zarządzanie rozbudowanymi projektami.
+- CI/CD jest ważnym elementem w dzisiejszym środowisku wytwarzania oprogramowania, umożliwiającym skuteczne dostarczanie wartościowych produktów i usług szybko i niezawodnie.
